@@ -13,4 +13,4 @@ import { PageListOrdersComponent } from './pages/page-list-orders/page-list-orde
   ],
   imports: [CommonModule, OrdersRoutingModule],
 })
-export class PageNotFoundModule {}
+export class OrdersModule {}
