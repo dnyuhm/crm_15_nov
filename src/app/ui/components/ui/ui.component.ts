@@ -9,13 +9,13 @@ export class UiComponent implements OnInit {
   public close: boolean;
 
   constructor() {
-    this.close = false;
+    this.close = true;
   }
 
   ngOnInit(): void {}
 
   public toggle(): void {
     this.close = !this.close;
-    console.log(this.close);
+    // console.log(this.close);
   }
 }
