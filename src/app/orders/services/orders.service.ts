@@ -14,6 +14,6 @@ export class OrdersService {
   constructor(private httpClient: HttpClient) {
     console.log('service orders instanced');
     this.collection$ = this.httpClient.get<Order[]>(`${this.urlApi}/orders`);
-    console.log(this.collection$);
+    // console.log(this.collection$);
   }
 }
