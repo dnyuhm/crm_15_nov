@@ -1,15 +1,23 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-template-container',
   templateUrl: './template-container.component.html',
   styleUrls: ['./template-container.component.scss'],
 })
-export class TemplateContainerComponent implements OnInit {
-  public title: string;
+export class TemplateContainerComponent implements OnInit, OnChanges {
+  @Input() public title: string;
+
   constructor() {
-    this.title = 'Ohhhhh le joli title';
+    this.title = 'Le titre est ici';
+    console.log(this.title);
   }
 
-  ngOnInit(): void {}
+  ngOnChanges(): void {
+    console.log(this.title);
+  }
+
+  ngOnInit(): void {
+    console.log(this.title);
+  }
 }
