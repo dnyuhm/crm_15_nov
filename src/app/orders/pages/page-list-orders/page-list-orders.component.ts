@@ -11,5 +11,5 @@ export class PageListOrdersComponent implements OnInit {
     this.ordersService.collection$.subscribe((data) => console.log(data));
   }
 
-  ngOnInit(): void {} 
+  ngOnInit(): void {}
 }
