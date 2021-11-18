@@ -6,7 +6,7 @@ export class Order implements OrderI {
   nbJours = 1;
   tva = 20;
   state = StateOrder.OPTION;
-  typePresta!: string
+  typePresta!: string;
   client!: string;
   comment!: string;
   id!: number;
@@ -14,5 +14,11 @@ export class Order implements OrderI {
     if (obj) {
       Object.assign(this, obj);
     }
+  }
+  public totalHT(): number {
+    return this.tjmHt * this.nbJours;
+  }
+  public totalTTC(): number {
+    return this.tjmHt * this.nbJours * (1 + this.tva / 100);
   }
 }
