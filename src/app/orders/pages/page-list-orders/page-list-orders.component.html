@@ -9,7 +9,7 @@
       <td>{{ item.tjmHt | currency }}</td>
       <td>{{ item | total | currency }}</td>
       <td>{{ item | total : true | currency }}</td>
-      <td class="toto" [appState]="item.state" >
+      <td class="toto" [appState]="item.state">
         <select (change)="changeState(item, $event)">
           <option *ngFor="let state of states" [value]='state' [selected]='state === item.state'>
             {{ state }}
@@ -18,4 +18,5 @@
       </td>
     </tr>
   </app-table-light>
+  <app-btn route="add" label="add order"></app-btn>
 </app-template-full-width>
