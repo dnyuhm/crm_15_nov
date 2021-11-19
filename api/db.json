@@ -79,6 +79,16 @@
       "client": "dddddd",
       "comment": "ddddd",
       "id": 8
+    },
+    {
+      "tjmHt": 1200,
+      "nbJours": 1,
+      "tva": 20,
+      "state": "OPTION",
+      "typePresta": "a",
+      "client": "aa",
+      "comment": "a",
+      "id": 9
     }
   ],
   "clients": [
